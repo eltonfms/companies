@@ -1,0 +1,72 @@
+/**
+ * components/_form.scss
+ */
+
+.form {
+
+  &.-group {
+    max-width: 350px;
+  }
+
+  &.-message {
+
+    &.-error {
+      padding-bottom: .8rem;
+    }
+  }
+
+  &.-item {
+    position: relative;
+    margin-bottom: 1.875rem;
+    padding: 0;
+  }
+
+  &.-button {
+    width: 324px;
+    max-width: 100%;
+
+    input[type=submit], button {
+      width: 100%;
+    }
+  }
+
+  input:not([type='submit']) {
+    width: 100%;
+    display: block;
+    padding-left: 39px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 36px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--colorGray);
+    border-radius: 0;
+    text-align: left;
+    color: var(--colorDark);
+    font-size: 1rem;
+    letter-spacing: .01em;
+    outline: none;
+    position: relative;
+    z-index: 2;
+  }
+
+  input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+
+    &::-webkit-input-placeholder {
+      color: inherit;
+      opacity: .5;
+    }
+
+    &:-ms-input-placeholder {
+      color: inherit;
+      opacity: .5;
+    }
+
+    &::placeholder {
+      color: inherit;
+      opacity: .5;
+    }
+  }
+}

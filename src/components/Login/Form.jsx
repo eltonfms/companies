@@ -3,7 +3,7 @@ import React from 'react';
 const LoginForm = () => {
   return (
     <div class="login -form">
-      <div class="form">
+      <div class="form -group">
         <div class="form -item">
           <input 
             type="email" 
@@ -20,8 +20,8 @@ const LoginForm = () => {
             placeholder="Senha"
           />
         </div>
-        <div class="form -message">
-          <p className="text -smaller">
+        <div class="form -message -error">
+          <p className="text -smaller c-alert">
             Credenciais informadas são inválidas, tente novamente.
           </p>
         </div>
