@@ -28,6 +28,36 @@
     min-height: 1px;
     padding-right: 8px;
     padding-left: 8px;
+
+    @for $i from 1 through 12 {
+    
+      &.-c#{$i} {
+        @include make-col($i);
+      }
+
+      &.-offset#{$i} {
+        @include make-col-offset($i);
+      }
+    }
+  
+    @media (min-width: 992px) { 
+  
+      @for $i from 1 through 12 {
+      
+        &.-c#{$i}-lg {
+          @include make-col($i);
+        }
+
+        &.-offset#{$i}-lg {
+          @include make-col-offset($i);
+        }
+      }
+  
+      &.-c-lg {
+        width: auto;
+        max-width: none;
+      }
+    }
   }
 
   &.-center {

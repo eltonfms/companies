@@ -18,6 +18,9 @@ $color-light: #B1B9B9;
 $color-white: #FFFFFF;
 $color-alert: #FF0F44;
 
+// container cols
+$grid-columns: 12;
+
 body {
    --fontPrimary: #{$font-primary};
    --fontSecondary: #{$font-secondary};
