@@ -1,0 +1,21 @@
+/**
+ * components/_logo.scss
+ */
+
+.logo {
+
+  &.-home {
+    width: 100%;
+    max-width: 294px;
+  }
+
+  &.-nav {
+    width: 100%;
+    max-width: 234px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

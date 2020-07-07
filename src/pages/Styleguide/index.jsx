@@ -7,16 +7,16 @@ const Styleguide = () => {
 
       <div>
 
-        {/*
         <div className="logo">
-          <div className="logo -main">
+          <div className="logo -home">
             <img src={require('../../assets/images/logo-home@2x.png')} alt="Ioasys" />
-          </div>
-          <div className="logo -inverse">
-            <img src={require('../../assets/images/logo-nav@2x.png')} alt="" />
+          </div> <br />
+          <div className="icons" style={{backgroundColor: '#000000', padding: '20px', }}>
+            <div className="logo -nav">
+              <img src={require('../../assets/images/logo-nav@2x.png')} alt="" />
+            </div>
           </div>
         </div>
-        */}
 
         <div className="title">
           <h1 className="title -larger">
