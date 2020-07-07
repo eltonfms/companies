@@ -1,8 +1,10 @@
 import React from 'react';
 
+import LogoHome from '../../components/Logo/LogoHome';
+
 const Login = () => {
   return (
-    <h1>Login</h1>
+    <LogoHome />
   );
 };
 
