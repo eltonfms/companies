@@ -10,7 +10,7 @@ const Login = () => {
       <div className="grid -container h-full">
         <div className="grid -wrap -center h-full">
           <div className="grid -col">
-            <div className="login">
+            <div className="login mt-3 mb-3">
               <LogoHome />
               <LoginIntro />
               <LoginForm />

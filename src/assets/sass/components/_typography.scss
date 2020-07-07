@@ -75,6 +75,10 @@ p {
   &.-smaller {
     font-size: .8rem;
     line-height: 1.2rem;
+
+    @media (min-width: 992px) {
+      font-size: .7rem;
+    }
   }
 
   &.-info {
