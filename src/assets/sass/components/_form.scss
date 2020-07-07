@@ -19,6 +19,13 @@
     position: relative;
     margin-bottom: 1.875rem;
     padding: 0;
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 6px;
+    }
   }
 
   &.-button {

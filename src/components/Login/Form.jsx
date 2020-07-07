@@ -2,9 +2,10 @@ import React from 'react';
 
 const LoginForm = () => {
   return (
-    <div class="login -form">
-      <div class="form -group">
-        <div class="form -item">
+    <div className="login -form">
+      <div className="form -group">
+        <div className="form -item -email">
+          <i className="icon -letter"></i>
           <input 
             type="email" 
             name="email" 
@@ -12,7 +13,8 @@ const LoginForm = () => {
             placeholder="E-mail"
           />
         </div>
-        <div class="form -item">
+        <div className="form -item -password">
+          <i className="icon -padlock"></i>
           <input 
             type="password" 
             name="password" 
@@ -20,12 +22,12 @@ const LoginForm = () => {
             placeholder="Senha"
           />
         </div>
-        <div class="form -message -error">
+        <div className="form -message -error">
           <p className="text -smaller c-alert">
             Credenciais informadas são inválidas, tente novamente.
           </p>
         </div>
-        <div class="form -button">
+        <div className="form -button">
           <button
             type="submit"
             name="login"

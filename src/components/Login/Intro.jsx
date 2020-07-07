@@ -2,7 +2,7 @@ import React from 'react';
 
 const LoginIntro = () => {
   return (
-    <div class="login -intro center">
+    <div className="login -intro center">
       <h1 className="title -larger -upper">
         <span>Bem-vindo ao <br/>Empresas</span>
       </h1>
