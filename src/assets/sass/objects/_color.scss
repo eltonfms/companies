@@ -1,0 +1,65 @@
+/**
+ * objects/_color.scss
+ */
+
+// text colors
+.c {
+  &-1 {
+    color: var(--colorPrimary);
+  }
+  &-2 {
+    color: var(--colorSecondary);
+  }
+  &-3 {
+    color: var(--colorTertiary);
+  }
+  &-4 {
+    color: var(--colorQuaternary);
+  }
+  &-dark {
+    color: var(--colorDark);
+  }
+  &-gray {
+    color: var(--colorGray);
+  }
+  &-light {
+    color: var(--colorLight);
+  }
+  &-white {
+    color: var(--colorWhite);
+  }
+  &-alert {
+    color: var(--colorAlert);
+  }
+}
+
+// backgrounds
+.b {
+  &-1 {
+    background-color: var(--colorPrimary);
+  }
+  &-2 {
+    background-color: var(--colorSecondary);
+  }
+  &-3 {
+    background-color: var(--colorTertiary);
+  }
+  &-4 {
+    background-color: var(--colorQuaternary);
+  }
+  &-dark {
+    background-color: var(--colorDark);
+  }
+  &-gray {
+    background-color: var(--colorGray);
+  }
+  &-light {
+    background-color: var(--colorLight);
+  }
+  &-white {
+    background-color: var(--colorWhite);
+  }
+  &-alert {
+    background-color: var(--colorAlert);
+  }
+}

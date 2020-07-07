@@ -4,7 +4,9 @@ import LogoHome from '../../components/Logo/LogoHome';
 
 const Login = () => {
   return (
-    <LogoHome />
+    <section className="b-4 login">
+      <LogoHome />
+    </section>
   );
 };
 
