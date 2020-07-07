@@ -80,7 +80,6 @@ const Styleguide = () => {
           </div>
         </div>
         
-
         <div className="text">
           <p className="text -larger">
             A antiga Teoria dos Atos de Comércio decorrente da chamada codificação napoleônica nunca definiu muito bem o que eram as atividades mercantis, os chamados atos de comércio. A definição do que eram os atos de comércio não convenceu a doutrina, pois muitas atividades não eram consideradas comerciais por razões históricas, como era o caso da negociação de bens imobiliários. Além disso, com a constante inovação tecnológica do mercado, diversas novas atividades foram surgindo, mas não eram enumeradas como atos de comércio pela lentidão do processo legislativo.
@@ -97,7 +96,7 @@ const Styleguide = () => {
         </div>
 
         <div className="button">
-          <button type="button -primary">
+          <button type="button" className="button -link -primary">
             <span>Entrar</span>
           </button>
         </div>
