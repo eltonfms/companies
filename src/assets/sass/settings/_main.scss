@@ -6,11 +6,32 @@
 $font-primary: 'Roboto', Verdana, Arial, sans-serif;
 $font-secondary: 'Source Sans Pro', Verdana, Arial, sans-serif;
 
+// colors
+$color-primary: #EE4C77;
+$color-secondary: #57BBBC;
+$color-tertiary: #7DC075;
+
+$color-dark: #1A0E49; 
+$color-gray: #383743;
+$color-light: #B5B4B4;
+$color-white: #FFFFFF;
+
 body {
    --fontPrimary: #{$font-primary};
    --fontSecondary: #{$font-secondary};
- 
+
+   --colorPrimary: #{$color-primary};
+   --colorSecondary: #{$color-secondary};
+   --colorTertiary: #{$color-tertiary};
+
+   --colorDark: #{$color-dark};
+   --colorGray: #{$color-gray};
+   --colorLight: #{$color-light};
+   --colorWhite: #{$color-white};
+
    font: 400 1rem/1.6 var(--fontPrimary);
+   background: var(--colorWhite);
+   color: var(--colorDark);
  }
  
 
