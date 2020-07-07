@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import Loading from '../Interface/Loading';
 
 const LoginForm = () => {
   const [fail, setFail] = useState(false);
@@ -72,11 +73,7 @@ const LoginForm = () => {
         </form>
       </div>
       { !loginLoading && 
-        <div className="loading -wrap">
-          <div className="loading -anime">
-            <span>Loading...</span>
-          </div>
-        </div>
+        <Loading />
       }
     </>
   );
