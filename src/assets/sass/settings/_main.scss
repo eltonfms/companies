@@ -21,6 +21,30 @@ $color-alert: #FF0F44;
 // container cols
 $grid-columns: 12;
 
+// container limits
+$grid-breakpoints:(
+  sm: 0,
+  lg: 992px
+);
+
+// spacers
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * 1),
+  2: ($spacer * 1.5),
+  3: ($spacer * 2),
+  4: ($spacer * 2.5),
+  5: ($spacer * 3),
+  6: ($spacer * 3.5),
+  7: ($spacer * 4),
+  8: ($spacer * 4.5),
+  9: ($spacer * 5),
+  10: ($spacer * 5.5)
+), $spacers);
+
+// main scope
 body {
    --fontPrimary: #{$font-primary};
    --fontSecondary: #{$font-secondary};

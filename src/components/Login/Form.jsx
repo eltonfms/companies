@@ -3,7 +3,7 @@ import React from 'react';
 const LoginForm = () => {
   return (
     <div className="login -form">
-      <div className="form -group">
+      <div className="form -group m-auto">
         <div className="form -item -email">
           <i className="icon -letter"></i>
           <input 
@@ -27,7 +27,7 @@ const LoginForm = () => {
             Credenciais informadas são inválidas, tente novamente.
           </p>
         </div>
-        <div className="form -button">
+        <div className="form -button m-auto">
           <button
             type="submit"
             name="login"
