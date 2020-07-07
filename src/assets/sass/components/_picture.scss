@@ -1,0 +1,50 @@
+/**
+ * components/_picture.scss
+ */
+
+.picture {
+
+  &.-placeholder {
+    width: 100%;
+    background-color: var(--colorTertiary);
+  }
+
+  &.-aspect {
+    height: 0;
+    width: 100%;
+    position: relative;
+
+    &.d-388-147 {
+      padding-top: 38%;
+    }
+
+    &.d-293-160 {
+      padding-top: 55%;
+    }
+  }
+
+  &.-figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img, span {
+      object-fit: cover;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-position: 50% 50%;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--colorWhite);
+      font-size: 5rem;
+      font-weight: bold;
+    }
+  }
+}

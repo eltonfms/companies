@@ -10,11 +10,13 @@ $font-secondary: 'Source Sans Pro', Verdana, Arial, sans-serif;
 $color-primary: #EE4C77;
 $color-secondary: #57BBBC;
 $color-tertiary: #7DC075;
+$color-quaternary: #EBE9D7;
 
 $color-dark: #1A0E49; 
 $color-gray: #383743;
-$color-light: #B5B4B4;
+$color-light: #B1B9B9;
 $color-white: #FFFFFF;
+$color-alert: #FF0F44;
 
 body {
    --fontPrimary: #{$font-primary};
@@ -23,11 +25,13 @@ body {
    --colorPrimary: #{$color-primary};
    --colorSecondary: #{$color-secondary};
    --colorTertiary: #{$color-tertiary};
+   --colorQuaternary: #{$color-quaternary};
 
    --colorDark: #{$color-dark};
    --colorGray: #{$color-gray};
    --colorLight: #{$color-light};
    --colorWhite: #{$color-white};
+   --colorAlert: #{$color-alert};
 
    font: 400 1rem/1.6 var(--fontPrimary);
    background: var(--colorWhite);

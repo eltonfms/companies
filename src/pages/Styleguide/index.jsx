@@ -56,9 +56,30 @@ const Styleguide = () => {
 
         <div className="picture">
           <div className="picture -placeholder">
-            <span>E1</span>
+            <div className="picture -aspect d-388-147">
+              <div className="picture -figure">
+                <span>E1</span>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div className="picture -placeholder">
+            <div className="picture -aspect d-293-160">
+              <div className="picture -figure">
+                <span>E1</span>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div className="picture -placeholder">
+            <div className="picture -aspect d-293-160">
+              <div className="picture -figure">
+                <img src={require('../../assets/images/temp/temp-company.jpg')} alt="Empresa" />
+              </div>
+            </div>
           </div>
         </div>
+        
 
         <div className="text">
           <p className="text -larger">
