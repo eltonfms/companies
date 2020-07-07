@@ -2,6 +2,7 @@ import React from 'react';
 
 import LogoHome from '../../components/Logo/LogoHome';
 import LoginIntro from '../../components/Login/Intro';
+import LoginForm from '../../components/Login/Form';
 
 const Login = () => {
   return (
@@ -9,6 +10,7 @@ const Login = () => {
       <div className="login">
         <LogoHome />
         <LoginIntro />
+        <LoginForm />
       </div>
     </section>
   );
