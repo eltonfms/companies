@@ -8,7 +8,18 @@ const LoginForm = () => {
   const { handleSubmit, register, errors } = useForm();
 
   const handleLogin = () => {
-
+    setLoginLoading(true);
+    try {
+      setTimeout(function () {
+        setLoginLoading(false);
+        setFail(true);
+      }, 1000);
+    } catch (err) {
+      setTimeout(function () {
+        setLoginLoading(false);
+        setFail(true);
+      }, 1000);
+    } finally { }
   };
 
   const onSubmit = () => {
@@ -72,7 +83,7 @@ const LoginForm = () => {
           </div>
         </form>
       </div>
-      { !loginLoading && 
+      { loginLoading && 
         <Loading />
       }
     </>
