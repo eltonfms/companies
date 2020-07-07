@@ -3,7 +3,7 @@ import React from 'react';
 const Styleguide = () => {
   return (
     <>
-      <h1>Empresas Styleguide</h1>
+      <h1>Empresas Styleguide</h1> <br />
 
       <div>
 
@@ -30,28 +30,14 @@ const Styleguide = () => {
           </h3>
         </div>
 
-        <div className="icon">
-          <i className="icon -letter"></i>
-        </div>
-
-        <div className="icon">
-          <i className="icon -padlock"></i>
-        </div>
-
-        <div className="icon">
-          <i className="icon -eye"></i>
-        </div>
-
-        <div className="icon">
+        <div className="icons" style={{backgroundColor: '#000000', padding: '50px', }}>
+          <i className="icon -back"></i> <br />
+          <i className="icon -close"></i> <br />
+          <i className="icon -eye"></i> <br />
+          <i className="icon -letter"></i> <br />
+          <i className="icon -padlock"></i> <br />
           <i className="icon -search"></i>
-        </div>
-
-        <div className="icon">
-          <i className="icon -back"></i>
-        </div>
-
-        <div className="icon">
-          <i className="icon -close"></i>
+          
         </div>
 
         <div className="picture">
