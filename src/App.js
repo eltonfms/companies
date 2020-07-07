@@ -1,12 +1,19 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+import Styleguide from './pages/Styleguide';
 
 import './assets/sass/critical.scss';
 import './assets/sass/main.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="App"></div>
-  );
+    <Switch>
+      <Route exact path="/styleguide">
+        <Styleguide />
+      </Route>
+    </Switch>
+  )
 }
 
 export default App;
