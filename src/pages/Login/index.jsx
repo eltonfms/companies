@@ -1,15 +1,14 @@
 import React from 'react';
 
 import LogoHome from '../../components/Logo/LogoHome';
+import LoginIntro from '../../components/Login/Intro';
 
 const Login = () => {
   return (
     <section className="page b-4">
       <div className="login">
         <LogoHome />
-        <h1 className="title -larger center">
-          <span>Bem-vindo ao <br/>Empresas</span>
-        </h1>
+        <LoginIntro />
       </div>
     </section>
   );

@@ -28,12 +28,19 @@ p {
   margin: 0;
 }
 
-.title {
+.title, .text {
   letter-spacing: normal;
-  font-weight: bold;
   font-style: normal;
   word-break: normal;
   font-stretch: normal;
+
+  &.-upper {
+    text-transform: uppercase;
+  }
+}
+
+.title {
+  font-weight: bold;
 
   &.-larger {
     font-size: 1.7rem;
@@ -52,11 +59,7 @@ p {
 }
 
 .text {
-  letter-spacing: normal;
   font-weight: normal;
-  font-style: normal;
-  word-break: normal;
-  font-stretch: normal;
 
   &.-larger {
     font-size: 1.4rem;
