@@ -14,7 +14,7 @@
   }
 
   @media (min-width: 992px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -26,4 +26,56 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+.title {
+  letter-spacing: normal;
+  font-weight: bold;
+  font-style: normal;
+  word-break: normal;
+  font-stretch: normal;
+
+  &.-larger {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+
+  &.-median {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  &.-smaller {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.text {
+  letter-spacing: normal;
+  font-weight: normal;
+  font-style: normal;
+  word-break: normal;
+  font-stretch: normal;
+
+  &.-larger {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    font-family: var(--fontSecondary);
+  }
+
+  &.-median {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  &.-smaller {
+    font-size: .8rem;
+    line-height: 1.2rem;
+  }
+
+  &.-info {
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+  }
 }
