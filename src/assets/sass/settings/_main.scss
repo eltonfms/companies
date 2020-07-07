@@ -2,6 +2,18 @@
  * settings/_main.scss
  */
 
+// fonts
+$font-primary: 'Roboto', Verdana, Arial, sans-serif;
+$font-secondary: 'Source Sans Pro', Verdana, Arial, sans-serif;
+
+body {
+   --fontPrimary: #{$font-primary};
+   --fontSecondary: #{$font-secondary};
+ 
+   font: 400 1rem/1.6 var(--fontPrimary);
+ }
+ 
+
 /* ==========================================================================
    Imports
    ========================================================================== */
