@@ -20,7 +20,7 @@ const SearchResult = () => {
                     </div>
                   </div>
                 </div>
-                <div class="card -text">
+                <div className="card -text">
                   <h2 className="title -larger">Empresa1</h2>
                   <h3 className="title -category c-support">Negócio</h3>
                   <span className="text -median c-support">Brasil</span>
@@ -38,7 +38,7 @@ const SearchResult = () => {
                     </div>
                   </div>
                 </div>
-                <div class="card -text">
+                <div className="card -text">
                   <h2 className="title -larger">Empresa2</h2>
                   <h3 className="title -category c-support">Finanças</h3>
                   <span className="text -median c-support">Colômbia</span>
@@ -56,7 +56,7 @@ const SearchResult = () => {
                     </div>
                   </div>
                 </div>
-                <div class="card -text">
+                <div className="card -text">
                   <h2 className="title -larger">Empresa3</h2>
                   <h3 className="title -category c-support">Agricultura</h3>
                   <span className="text -median c-support">Argentina</span>
