@@ -41,4 +41,18 @@
       background: var(--colorTertiary);
     }
   }
+
+  &.-clean {
+    text-decoration: none;
+    box-shadow: none;
+    background: none;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: 0; 
+    border: 0;
+    border-radius: 0;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+  }
 }
