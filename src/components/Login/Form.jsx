@@ -13,13 +13,8 @@ const LoginForm = () => {
       setTimeout(function () {
         setLoginLoading(false);
         setFail(true);
-      }, 1000);
-    } catch (err) {
-      setTimeout(function () {
-        setLoginLoading(false);
-        setFail(true);
-      }, 1000);
-    } finally { }
+      }, 3000);
+    } catch (err) { } finally {  }
   };
 
   const onSubmit = () => {
@@ -32,21 +27,24 @@ const LoginForm = () => {
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
           <div className="form -group w-350 m-auto">
             <div className="form -item -email">
-              <i className="icon -letter"></i>
-              <input 
-                type="email" 
-                name="email" 
-                id="email"
-                placeholder="E-mail"
-                autoComplete="off"
-                ref={register({
-                  required: 'Por favor preencha o e-mail.',
-                  pattern: {
-                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                    message: "* E-mail inválido. Por favor preencha novamente."
-                  }
-                })}
-              />
+              <div className="form -field">
+                <i className="icon -letter"></i>
+                <input 
+                  type="email" 
+                  name="email" 
+                  id="email"
+                  placeholder="E-mail"
+                  autoComplete="off"
+                  ref={register({
+                    required: 'Por favor preencha o e-mail.',
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                      message: "E-mail inválido. Por favor preencha novamente."
+                    }
+                  })}
+                />
+                <span className="form -alert">!</span>
+              </div>
               { errors.email &&
                 <div className="form -message -error">
                   <p className="text -smaller c-alert">
@@ -56,16 +54,19 @@ const LoginForm = () => {
               }
             </div>
             <div className="form -item -password">
-              <i className="icon -padlock"></i>
-              <input 
-                type="password" 
-                name="password" 
-                id="password"
-                placeholder="Senha"
-              />
+              <div className="form -field">
+                <i className="icon -padlock"></i>
+                <input 
+                  type="password" 
+                  name="password" 
+                  id="password"
+                  placeholder="Senha"
+                />
+                <span className="form -alert">!</span>
+              </div>
             </div>
             { fail &&
-              <div className="form -message -error">
+              <div className="form -message -error mb-2">
                 <p className="text -smaller c-alert">
                   Credenciais informadas são inválidas, tente novamente.
                 </p>
