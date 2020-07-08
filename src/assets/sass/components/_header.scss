@@ -1,0 +1,25 @@
+/**
+ * components/_header.scss
+ */
+ 
+.header {
+
+  &.-wrap { 
+    height: 60px;
+    background: -webkit-linear-gradient(top, rgba(238,76,119,1) 0%,rgba(189,61,103,1) 100%);
+    background: linear-gradient(to bottom, rgba(238,76,119,1) 0%,rgba(189,61,103,1) 100%);
+    
+    @media (min-width: 992px) {
+      height: 150px;
+    }
+  }
+
+  &.-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+  }
+}
