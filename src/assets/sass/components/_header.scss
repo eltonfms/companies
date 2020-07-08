@@ -6,9 +6,14 @@
 
   &.-wrap { 
     height: 60px;
+    width: 100%;
     background: -webkit-linear-gradient(top, rgba(238,76,119,1) 0%,rgba(189,61,103,1) 100%);
     background: linear-gradient(to bottom, rgba(238,76,119,1) 0%,rgba(189,61,103,1) 100%);
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
     @media (min-width: 992px) {
       height: 150px;
     }
@@ -21,5 +26,13 @@
     position: relative;
     z-index: 1;
     height: 100%;
+  }
+
+  &.-search {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    height: 100%;
+    z-index: 2;
   }
 }
