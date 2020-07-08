@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useHistory } from 'react-router-dom';
 import Loading from '../Interface/Loading';
 
 const LoginForm = () => {
   const [fail, setFail] = useState(false);
   const [loginLoading, setLoginLoading] = useState(false);
   const { handleSubmit, register, errors } = useForm();
+  const history = useHistory();
 
   const handleLogin = () => {
     setLoginLoading(true);
@@ -14,6 +16,9 @@ const LoginForm = () => {
         setLoginLoading(false);
         setFail(true);
       }, 3000);
+      setTimeout(function () {
+        history.push('/busca');
+      }, 10000);
     } catch (err) { } finally {  }
   };
 
@@ -84,7 +89,7 @@ const LoginForm = () => {
           </div>
         </form>
       </div>
-      { loginLoading && 
+      {loginLoading && 
         <Loading />
       }
     </>

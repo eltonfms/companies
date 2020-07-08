@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useHistory } from 'react-router-dom';
 import Loading from '../Interface/Loading';
 import LogoNav from '../../components/Logo/LogoNav';
 
 const Header = (props) => {
   const [open, setOpen] = useState(false);
-  const [success, setSuccess] = useState(false);
   const [loginLoading, setLoginLoading] = useState(false);
   const { handleSubmit } = useForm();
+  const history = useHistory();
 
   const handleSearch = () => {
     setLoginLoading(true);
     try {
       setTimeout(function () {
         setLoginLoading(false);
-        setSuccess(true);
+        history.push('/resultado');
       }, 3000);
     } catch (err) { } finally {  }
   };
@@ -62,7 +63,7 @@ const Header = (props) => {
           </form>
         }
       </div>
-      { loginLoading && 
+      {loginLoading && 
         <Loading />
       }
     </div>
