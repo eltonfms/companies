@@ -25,9 +25,11 @@ const Header = () => {
 
   return (
     <div className="header -wrap">
-      <div className="header -logo">
-        <LogoNav />
-      </div>
+      {!open &&
+        <div className="header -logo">
+          <LogoNav />
+        </div>
+      }
       <div className="header -back">
 
       </div>
@@ -53,6 +55,13 @@ const Header = () => {
               className="search -input"
               autofocus="true"
             />
+            <button
+              type="button"
+              onClick={() => setOpen(false)}
+              className="button -clean"
+            >
+              <i className="icon -close"></i>
+            </button>
           </form>
         }
       </div>
