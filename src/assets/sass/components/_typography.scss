@@ -72,9 +72,15 @@ p {
   font-weight: normal;
 
   &.-larger {
-    font-size: 1.4rem;
-    line-height: 1.9rem;
+    font-size: 1.2rem;
+    line-height: 1.72rem;
+    letter-spacing: .02em;
     font-family: var(--fontSecondary);
+
+    @media (min-width: 992px) {
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+    }
   }
 
   &.-median {

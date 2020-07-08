@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Search from './pages/Search/Search';
 import SearchResult from './pages/Search/Result';
+import Single from './pages/Single';
 import Styleguide from './pages/Styleguide';
 
 import './assets/sass/critical.scss';
@@ -20,6 +21,9 @@ const App = () => {
       </Route>
       <Route exact path="/resultado">
         <SearchResult />
+      </Route>
+      <Route exact path="/single">
+        <Single />
       </Route>
       <Route exact path="/styleguide">
         <Styleguide />

@@ -46,4 +46,20 @@
       padding-left: 42px;
     }
   }
+
+  &.-single {
+    width: 100%;
+    background: var(--colorWhite);
+
+    @media (min-width: 992px) {
+      padding: 50px 74px;
+    }
+  }
+
+  &.-info {
+
+    @media (max-width: 991px) {
+      padding: 0 28px 28px;
+    }
+  }
 }
