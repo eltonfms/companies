@@ -37,15 +37,25 @@
 
     .icon.-search {
       position: absolute;
-      bottom: 44px;
-      left: 6px;
+      bottom: 19px;
+      left: 0;
+
+      @media (min-width: 992px) {
+        bottom: 44px;
+        left: 6px;
+      }
     }
 
     .button.-clean {
       position: absolute;
-      right: 5px;
-      bottom: 38px;
+      right: 0;
+      bottom: 15px;
       z-index: 2;
+
+      @media (min-width: 992px) {
+        bottom: 38px;
+        right: 5px;
+      }
     }
   }
 
@@ -57,7 +67,7 @@
     padding-right: 39px;
     padding-top: 0;
     padding-bottom: 0;
-    height: 80px;
+    height: 40px;
     background: transparent;
     border: 0;
     border-bottom: 1px solid var(--colorWhite);
@@ -72,6 +82,7 @@
 
     @media (min-width: 992px) {
       padding-left: 72px;
+      height: 80px;
     }
 
     &::-ms-clear {
