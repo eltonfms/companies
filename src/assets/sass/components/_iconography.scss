@@ -10,8 +10,13 @@
 
   &.-back {
     background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 482.239 482.239' viewBox='0 0 482.239 482.239' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m206.812 34.446-206.812 206.673 206.743 206.674 24.353-24.284-165.167-165.167h416.31v-34.445h-416.31l165.236-165.236z' fill='%23ffffff'/%3E%3C/svg%3E");
-    width: 36px;
-    height: 36px;
+    width: 26px;
+    height: 26px;
+
+    @media (min-width: 992px) {
+      width: 36px;
+      height: 36px;
+    }
   }
 
   &.-close {

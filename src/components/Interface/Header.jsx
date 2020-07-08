@@ -25,18 +25,11 @@ const Header = (props) => {
 
   return (
     <div className="header -wrap">
-
-      {props.result && 
-        <div className="header -back">
-        </div>
-      }
-
       {!open && 
         <div className="header -logo">
           <LogoNav />
         </div>
       }
-      
       <div className={`search -wrap ${open ? 'open' : ''}`}>
         {!open && 
           <button

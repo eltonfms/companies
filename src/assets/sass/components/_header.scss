@@ -27,4 +27,27 @@
     z-index: 1;
     height: 100%;
   }
+
+  &.-back {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    @media (min-width: 992px) {
+      left: 26px;
+    }
+  }
+
+  &.-title {
+    height: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 992px) {
+      padding-left: 140px;
+    }
+  }
 }

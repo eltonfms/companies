@@ -38,6 +38,10 @@ p {
     text-transform: uppercase;
   }
 
+  &.-regular {
+    font-weight: normal;
+  }
+
   &.-center {
     text-align: center;
   }

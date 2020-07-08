@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../../components/Interface/Header';
+import HeaderBack from '../../components/Interface/HeaderBack';
 
 const Single = () => {
   return (
     <section className="page b-4">
-      <Header result />
+      <HeaderBack />
       <div className="grid -container h-full offset-header">
         <div className="grid -wrap h-full">
           <div className="grid -col">
