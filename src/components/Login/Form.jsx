@@ -27,7 +27,7 @@ const LoginForm = () => {
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
           <div className="form -group w-350 m-auto">
             <div className="form -item -email">
-              <div className="form -field">
+              <div className={`form -field ${fail ? '-error' : ''}`}>
                 <i className="icon -letter"></i>
                 <input 
                   type="email" 
@@ -54,7 +54,7 @@ const LoginForm = () => {
               }
             </div>
             <div className="form -item -password">
-              <div className="form -field">
+              <div className={`form -field ${fail ? '-error' : ''}`}>
                 <i className="icon -padlock"></i>
                 <input 
                   type="password" 

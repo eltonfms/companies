@@ -13,6 +13,17 @@
 
   *.-field {
     position: relative;
+
+    &.-error {
+
+      input:not([type='submit']) {
+        border-bottom-color: var(--colorAlert);
+      }
+
+      .-alert {
+        display: block;
+      }
+    }
   }
 
   &.-item {
@@ -50,6 +61,7 @@
     background-color: var(--colorAlert);
     color: var(--colorWhite);
     font-size: .9rem;
+    display: none;
   }
 
   input:not([type='submit']) {
