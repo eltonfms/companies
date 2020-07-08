@@ -20,3 +20,14 @@
     height: 100%;
   }
 }
+
+.offset {
+  
+  &-header {
+    padding-top: 60px;
+    
+    @media (min-width: 992px) {
+      padding-top: 150px;
+    }
+  }
+}

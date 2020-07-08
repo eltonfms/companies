@@ -101,18 +101,18 @@
   input[type=search] {
 
     &::-webkit-input-placeholder {
-      color: inherit;
-      opacity: .5;
+      color: #991237;
+      opacity: 1;
     }
 
     &:-ms-input-placeholder {
-      color: inherit;
-      opacity: .5;
+      color: #991237;
+      opacity: 1;
     }
 
     &::placeholder {
-      color: inherit;
-      opacity: .5;
+      color: #991237;
+      opacity: 1;
     }
   }
 }

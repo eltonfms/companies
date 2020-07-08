@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import Loading from '../Interface/Loading';
 import LogoNav from '../../components/Logo/LogoNav';
 
-const Header = () => {
+const Header = (props) => {
   const [open, setOpen] = useState(false);
   const [success, setSuccess] = useState(false);
   const [loginLoading, setLoginLoading] = useState(false);
@@ -25,11 +25,11 @@ const Header = () => {
 
   return (
     <div className="header -wrap">
-      {!open &&
+      {!open && !props.result && (
         <div className="header -logo">
           <LogoNav />
         </div>
-      }
+      )}
       <div className="header -back">
 
       </div>
