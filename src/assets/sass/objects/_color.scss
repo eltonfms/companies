@@ -31,6 +31,9 @@
   &-alert {
     color: var(--colorAlert);
   }
+  &-support {
+    color: var(--colorSupport);
+  }
 }
 
 // backgrounds
@@ -61,5 +64,8 @@
   }
   &-alert {
     background-color: var(--colorAlert);
+  }
+  &-support {
+    background-color: var(--colorSupport);
   }
 }

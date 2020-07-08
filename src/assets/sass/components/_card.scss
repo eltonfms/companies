@@ -1,0 +1,49 @@
+/**
+ * components/_card.scss
+ */
+ 
+.card {
+
+  &.-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    background: var(--colorWhite);
+    box-shadow: none;
+    color: inherit;
+    transform: none;
+    transition: all .3s ease;
+
+    @media (min-width: 992px) {
+      padding: 28px;
+    }
+
+    &:hover {
+      box-shadow: 8px 8px 12px -6px rgba(0, 0, 0, 0.1);
+      transform: translate3d(-2px,-2px,0);
+    }
+  }
+
+  &.-image {
+    max-width: 100%;
+    flex: 0 0 100%;
+
+    @media (min-width: 992px) {
+      max-width: 293px;
+      flex: 0 0 293px;
+    }
+  }
+
+  &.-text {
+
+    @media (max-width: 991px) {
+      padding: 20px;
+    }
+
+    @media (min-width: 992px) {
+      padding-left: 42px;
+    }
+  }
+}

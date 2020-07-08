@@ -25,16 +25,20 @@ const Header = (props) => {
 
   return (
     <div className="header -wrap">
-      {!open && !props.result && (
+
+      {props.result && 
+        <div className="header -back">
+        </div>
+      }
+
+      {!open && 
         <div className="header -logo">
           <LogoNav />
         </div>
-      )}
-      <div className="header -back">
-
-      </div>
+      }
+      
       <div className={`search -wrap ${open ? 'open' : ''}`}>
-        {!open &&
+        {!open && 
           <button
             type="button"
             onClick={() => setOpen(true)}
@@ -43,7 +47,7 @@ const Header = (props) => {
             <i className="icon -search"></i>
           </button>
         }
-        {open &&
+        {open && 
           <form onSubmit={handleSubmit(onSubmit)} noValidate className="search -form">
             <i className="icon -search"></i>
             <input

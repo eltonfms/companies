@@ -17,6 +17,7 @@ $color-gray: #383743;
 $color-light: #B1B9B9;
 $color-white: #FFFFFF;
 $color-alert: #FF0F44;
+$color-support: #8d8c8c;
 
 // container cols
 $grid-columns: 12;
@@ -59,6 +60,7 @@ body {
    --colorLight: #{$color-light};
    --colorWhite: #{$color-white};
    --colorAlert: #{$color-alert};
+   --colorSupport: #{$color-support};
 
    font: 400 1rem/1.6 var(--fontPrimary);
    background: var(--colorWhite);
