@@ -13,7 +13,7 @@ import './assets/sass/main.scss';
 const App = () => {
   return (
     <Switch>
-      <Route exact path="/login">
+      <Route exact path={["/", "/login"]}>
         <Login />
       </Route>
       <Route exact path="/busca">
