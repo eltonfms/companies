@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 
 import Login from './pages/Login';
 import Search from './pages/Search/Search';
@@ -12,7 +12,7 @@ import './assets/sass/main.scss';
 
 const App = () => {
   return (
-    <Switch>
+    <HashRouter basename='/'>
       <Route exact path={["/", "/login"]}>
         <Login />
       </Route>
@@ -28,7 +28,7 @@ const App = () => {
       <Route exact path="/styleguide">
         <Styleguide />
       </Route>
-    </Switch>
+    </HashRouter>
   )
 }
 
