@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/companies/static/css/main.972a55af.chunk.css",
+    "main.js": "/companies/static/js/main.0c7d7cba.chunk.js",
+    "main.js.map": "/companies/static/js/main.0c7d7cba.chunk.js.map",
+    "runtime-main.js": "/companies/static/js/runtime-main.21ecbc2a.js",
+    "runtime-main.js.map": "/companies/static/js/runtime-main.21ecbc2a.js.map",
+    "static/js/2.f982f58a.chunk.js": "/companies/static/js/2.f982f58a.chunk.js",
+    "static/js/2.f982f58a.chunk.js.map": "/companies/static/js/2.f982f58a.chunk.js.map",
+    "index.html": "/companies/index.html",
+    "precache-manifest.5b5a84684b9d170c8fb556dd82bf40b9.js": "/companies/precache-manifest.5b5a84684b9d170c8fb556dd82bf40b9.js",
+    "service-worker.js": "/companies/service-worker.js",
+    "static/css/main.972a55af.chunk.css.map": "/companies/static/css/main.972a55af.chunk.css.map",
+    "static/js/2.f982f58a.chunk.js.LICENSE.txt": "/companies/static/js/2.f982f58a.chunk.js.LICENSE.txt",
+    "static/media/critical.scss": "/companies/static/media/SourceSansPro-Regular.c572d2af.woff",
+    "static/media/temp-company.jpg": "/companies/static/media/temp-company.7530dbd6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21ecbc2a.js",
+    "static/js/2.f982f58a.chunk.js",
+    "static/css/main.972a55af.chunk.css",
+    "static/js/main.0c7d7cba.chunk.js"
+  ]
+}
